@@ -55,12 +55,6 @@ build CMakeFiles/Mpointers.dir/main.cpp.o: CXX_COMPILER__Mpointers_unscanned_Deb
   OBJECT_DIR = CMakeFiles/Mpointers.dir
   OBJECT_FILE_DIR = CMakeFiles/Mpointers.dir
 
-build CMakeFiles/Mpointers.dir/src/MPointers.cpp.o: CXX_COMPILER__Mpointers_unscanned_Debug /home/harold-madriz/Documentos/Mpointers/src/MPointers.cpp || cmake_object_order_depends_target_Mpointers
-  DEP_FILE = CMakeFiles/Mpointers.dir/src/MPointers.cpp.o.d
-  FLAGS = -g -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles/Mpointers.dir
-  OBJECT_FILE_DIR = CMakeFiles/Mpointers.dir/src
-
 
 # =============================================================================
 # Link build statements for EXECUTABLE target Mpointers
@@ -69,7 +63,7 @@ build CMakeFiles/Mpointers.dir/src/MPointers.cpp.o: CXX_COMPILER__Mpointers_unsc
 #############################################
 # Link the executable Mpointers
 
-build Mpointers: CXX_EXECUTABLE_LINKER__Mpointers_Debug CMakeFiles/Mpointers.dir/main.cpp.o CMakeFiles/Mpointers.dir/src/MPointers.cpp.o
+build Mpointers: CXX_EXECUTABLE_LINKER__Mpointers_Debug CMakeFiles/Mpointers.dir/main.cpp.o
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/Mpointers.dir
   POST_BUILD = :

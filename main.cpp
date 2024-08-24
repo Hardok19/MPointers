@@ -10,10 +10,10 @@ using namespace std;
 
 
 int main() {
-    MPointer ptr;
-    string a = ptr.ejemplo();
-    cout << a;
-    cout << "Hello, World!";
+    MPointer<string> myPtr = MPointer<string>::New();
+    string a = myPtr.ejemplo();
+    cout << a << endl;
+    cout << "Hello, World!" << endl;
     return 0;
 
 }
