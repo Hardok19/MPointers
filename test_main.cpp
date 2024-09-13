@@ -18,6 +18,7 @@ TEST(MPointerTest, Collector) {
 
 
 
+
     EXPECT_EQ(MPointerGC<int>::getInstance().elenlista(), 0);
     EXPECT_EQ(MPointerGC<int>::getInstance().getcuenta(), 0);
 }
@@ -65,8 +66,11 @@ TEST(SortingTest, QuickSortTest) {
     *ptr2 = 5;
     *ptr3 = 8;
     *ptr4 = 3;
-    *ptr5 = 30;
-    *ptr6 = 2;
+    ptr5 = 30;
+    ptr6 = 2;
+    ptr3 = ptr5;
+
+
 
 
     ListaDoble lista;
@@ -80,11 +84,12 @@ TEST(SortingTest, QuickSortTest) {
 
     lista.qsort();
 
+
     EXPECT_EQ(lista.getvalue(1), 2);
     EXPECT_EQ(lista.getvalue(2), 3);
     EXPECT_EQ(lista.getvalue(3), 5);
-    EXPECT_EQ(lista.getvalue(4), 8);
-    EXPECT_EQ(lista.getvalue(5), 10);
+    EXPECT_EQ(lista.getvalue(4), 10);
+    EXPECT_EQ(lista.getvalue(5), 30);
     EXPECT_EQ(lista.getvalue(6), 30);
 
 }
@@ -101,8 +106,10 @@ TEST(SortingTest, BubbleSortTest) {
     *ptr2 = 5;
     *ptr3 = 8;
     *ptr4 = 3;
-    *ptr5 = 30;
-    *ptr6 = 2;
+    ptr5 = 30;
+    ptr6 = 2;
+    ptr3 = ptr5;
+    int a = &ptr5;
 
 
     ListaDoble lista;
@@ -119,9 +126,10 @@ TEST(SortingTest, BubbleSortTest) {
     EXPECT_EQ(lista.getvalue(1), 2);
     EXPECT_EQ(lista.getvalue(2), 3);
     EXPECT_EQ(lista.getvalue(3), 5);
-    EXPECT_EQ(lista.getvalue(4), 8);
-    EXPECT_EQ(lista.getvalue(5), 10);
+    EXPECT_EQ(lista.getvalue(4), 10);
+    EXPECT_EQ(lista.getvalue(5), 30);
     EXPECT_EQ(lista.getvalue(6), 30);
+    EXPECT_EQ(a, 30);
 
 }
 
@@ -137,8 +145,10 @@ TEST(SortingTest, InsertionSortTest) {
     *ptr2 = 5;
     *ptr3 = 8;
     *ptr4 = 3;
-    *ptr5 = 30;
-    *ptr6 = 2;
+    ptr5 = 30;
+    ptr6 = 2;
+    ptr3 = ptr5;
+    int a = &ptr5;
 
 
     ListaDoble lista;
@@ -155,9 +165,10 @@ TEST(SortingTest, InsertionSortTest) {
     EXPECT_EQ(lista.getvalue(1), 2);
     EXPECT_EQ(lista.getvalue(2), 3);
     EXPECT_EQ(lista.getvalue(3), 5);
-    EXPECT_EQ(lista.getvalue(4), 8);
-    EXPECT_EQ(lista.getvalue(5), 10);
+    EXPECT_EQ(lista.getvalue(4), 10);
+    EXPECT_EQ(lista.getvalue(5), 30);
     EXPECT_EQ(lista.getvalue(6), 30);
+    EXPECT_EQ(a, 30);
 
 }
 
