@@ -1,4 +1,4 @@
-# Install script for directory: /home/harold-madriz/Documentos/Mpointers
+# Install script for directory: /home/harold-madriz/Documentos/prueba 2/MPointers
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/harold-madriz/Documentos/Mpointers/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/harold-madriz/Documentos/prueba 2/MPointers/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
