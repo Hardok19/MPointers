@@ -1,3 +1,0 @@
-/home/harold-madriz/Documentos/Mpointers/cmake-build-debug/CMakeFiles/Mpointers.dir
-/home/harold-madriz/Documentos/Mpointers/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/harold-madriz/Documentos/Mpointers/cmake-build-debug/CMakeFiles/rebuild_cache.dir
